@@ -1,38 +1,51 @@
-<section style="
-  background:#000;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  text-align:center;
-  color:white;
-  overflow:hidden;
-">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Aakar</title>
 
-  <img src="hungama-logo.png" alt="Hungama OTT"
-       style="
-       width:320px;
-       max-width:80vw;
-       opacity:0;
-       animation:fadeIn 2.2s ease forwards;
-       ">
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: center;
+    }
 
-  <p style="
-     margin-top:24px;
-     font-size:12px;
-     letter-spacing:2px;
-     opacity:0.6;
-     font-family: serif;
-  ">
-     CAMPAIGN COLLABORATION
-  </p>
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+    }
 
-</section>
+    img {
+      max-width: 320px;
+    }
 
-<style>
-@keyframes fadeIn {
-  from { opacity:0; transform:translateY(20px); }
-  to   { opacity:1; transform:translateY(0); }
-}
-</style>
+    h1 {
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HOME -->
+  <section>
+    <h1>Creative Aakar</h1>
+  </section>
+
+  <!-- HUNGAMA CASE -->
+  <section id="hungama">
+    <img src="hungama.png" alt="Hungama OTT Logo" />
+    <p>Campaign Creative Direction & Visual Storytelling</p>
+  </section>
+
+</body>
+</html>
