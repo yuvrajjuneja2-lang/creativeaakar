@@ -1,62 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creative Aakar</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background:#000; color:#fff; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
-    section { padding:120px 24px; max-width:1100px; margin:0 auto; text-align:center; }
-    .hero { height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; }
-    h1 { font-size:48px; font-weight:500; letter-spacing:-0.02em; }
-    h2 { font-size:28px; font-weight:500; margin-bottom:24px; }
-    p { color:#888; font-size:18px; max-width:700px; margin:16px auto 0; }
-    .button { margin-top:32px; padding:12px 28px; border:1px solid #444; border-radius:999px; text-decoration:none; color:#fff; transition:.3s; display:inline-block; }
-    .button:hover { background:#fff; color:#000; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:24px; margin-top:48px; color:#aaa; font-size:16px; }
-    footer { padding:120px 24px; text-align:center; color:#666; font-size:14px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Creative Aakar</title>
+
+<!-- Google Fonts: Editorial Serif + Clean Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background:#000;
+  color:#fff;
+  font-family:'Inter',sans-serif;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+/* subtle cinematic grain */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity:.08;
+  pointer-events:none;
+}
+
+section{
+  padding:140px 24px;
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
+}
+
+h1,h2{
+  font-family:'Playfair Display',serif;
+  letter-spacing:-0.02em;
+}
+
+h1{
+  font-size:56px;
+  font-weight:600;
+}
+
+h2{
+  font-size:34px;
+  margin-bottom:24px;
+}
+
+p{
+  color:#aaa;
+  font-size:18px;
+  max-width:720px;
+  margin:18px auto 0;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.button{
+  margin-top:36px;
+  padding:14px 34px;
+  border:1px solid #444;
+  border-radius:999px;
+  text-decoration:none;
+  color:#fff;
+  transition:.3s;
+  font-size:14px;
+  letter-spacing:.08em;
+}
+
+.button:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* selected work grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:28px;
+  margin-top:60px;
+}
+
+.card{
+  border:1px solid #222;
+  padding:60px 20px;
+  transition:.3s;
+}
+
+.card:hover{
+  border-color:#666;
+  transform:translateY(-4px);
+}
+
+.clients{
+  font-size:14px;
+  color:#777;
+  margin-top:24px;
+  line-height:2;
+}
+
+footer{
+  padding:160px 24px;
+  text-align:center;
+  color:#666;
+  font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Cinematic storytelling<br>for modern brands.</h1>
-  <p>Content-driven solutions that connect, resonate, and inspire. Rooted in strategy, storytelling, and brand identity.</p>
-  <a class="button" href="#work">View Work</a>
+  <h1>We build stories that<br>move brands forward.</h1>
+  <p>
+    Creative Aakar is a strategy-led creative studio crafting campaigns,
+    films, and digital narratives for modern culture.
+  </p>
+  <a class="button" href="#work">VIEW SELECTED WORK</a>
 </section>
 
-<section>
-  <h2>We are Creative Aakar.</h2>
-  <p>A content and storytelling studio building narratives, visuals, and brand worlds across digital, film, and culture.</p>
-</section>
+<!-- SELECTED WORK -->
+<section id="work">
+  <h2>Selected Work</h2>
 
-<section>
-  <h2>Capabilities</h2>
   <div class="grid">
-    <div>Strategy</div><div>Content</div><div>Campaigns</div><div>Social & Community</div>
-    <div>Performance</div><div>Films</div><div>AI & CGI</div><div>Visual Promotion</div>
+    <div class="card">Hungama</div>
+    <div class="card">Wendy’s</div>
+    <div class="card">Wakefit</div>
+    <div class="card">Tata AIG</div>
   </div>
 </section>
 
+<!-- CAPABILITIES -->
 <section>
-  <h2>From words to worlds.</h2>
-  <p>Editorials, scripts, branding, films, podcasts, AI, trailers, and complete visual storytelling ecosystems — built to move culture and create measurable impact.</p>
+  <h2>Capabilities</h2>
+  <p>
+    Strategy, creative direction, film production, and growth systems —
+    built as one seamless storytelling engine for brands that want
+    cultural relevance and measurable impact.
+  </p>
 </section>
 
-<section id="work">
-  <h2>Selected Collaborations</h2>
-  <p>JP Morgan · Tata AIG · Hungama · Dentsu · Wendy’s · Wakefit · Urban Company · Pepperfry · OTIS · Dalmia Bharat</p>
-</section>
-
+<!-- PHILOSOPHY -->
 <section>
-  <h2>Creative that performs.</h2>
-  <p>Dynamic content. Platform-specific storytelling. Tangible audience and business impact.</p>
+  <h2>Attention is earned.<br>Culture is shaped.<br>Stories decide both.</h2>
 </section>
 
+<!-- CLIENTS -->
+<section>
+  <h2>Selected Clients</h2>
+  <p class="clients">
+    JP Morgan · Tata AIG · Hungama · Dentsu · Wendy’s · Wakefit ·  
+    Urban Company · Pepperfry · OTIS · Dalmia Bharat
+  </p>
+</section>
+
+<!-- CLOSING -->
 <footer>
-  When story, craft, and intent align, brands don’t just communicate — they endure.<br><br>
-  <strong>Creative Aakar</strong>
+  Let’s build what the future remembers.<br><br>
+  <strong>hello@creativeaakar.in</strong>
 </footer>
 
 </body>
