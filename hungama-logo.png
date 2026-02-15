@@ -1,0 +1,38 @@
+<section style="
+  background:#000;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  color:white;
+  overflow:hidden;
+">
+
+  <img src="hungama-logo.png" alt="Hungama OTT"
+       style="
+       width:320px;
+       max-width:80vw;
+       opacity:0;
+       animation:fadeIn 2.2s ease forwards;
+       ">
+
+  <p style="
+     margin-top:24px;
+     font-size:12px;
+     letter-spacing:2px;
+     opacity:0.6;
+     font-family: serif;
+  ">
+     CAMPAIGN COLLABORATION
+  </p>
+
+</section>
+
+<style>
+@keyframes fadeIn {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+</style>
